@@ -1,17 +1,17 @@
 export GIT_USER_NAME="jm1021"
 export GIT_USER_EMAIL="jmort1021@gmail.com"
 
-# Function to check if a line exists in run commands
-line_exists_in_rc() {
-  grep -Fxq "$1" ~/.bashrc
-}
+# # Function to check if a line exists in run commands
+# line_exists_in_rc() {
+#   grep -Fxq "$1" ~/.bashrc
+# }
 
-# Function to add line to run commands
-add_to_rc() {
-  if ! line_exists_in_rc "$1"; then
-    echo "$1" >> ~/.bashrc
-  fi
-}
+# # Function to add line to run commands
+# add_to_rc() {
+#   if ! line_exists_in_rc "$1"; then
+#     echo "$1" >> ~/.bashrc
+#   fi
+# }
 
 add_to_rc 'alias code="code --no-sandbox"'
 add_to_rc 'alias venv="source venv/bin/activate"'
