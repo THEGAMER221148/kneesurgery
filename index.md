@@ -1,9 +1,9 @@
----
+<!-- ---
 layout: base
 title: Student Home 
 description: Home Page
 hide: true
----
+--- -->
 
 <html lang="en">
     <head>
