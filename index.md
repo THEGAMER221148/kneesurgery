@@ -7,14 +7,10 @@ hide: true
 
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <style>
         </style>
     </head>
     <body>
-        <div id="topbar">
-            <h2>ohio town yeah</h2>
-        </div>
-        <h1>Hello, World!</h1>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt27814427%2F&psig=AOvVaw0IfUk9K40uxkYye7XstEHm&ust=1733862748884000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCVrvTEm4oDFQAAAAAdAAAAABAE">
     </body>
 </html>
