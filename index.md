@@ -11,6 +11,7 @@ hide: true
         </style>
     </head>
     <body>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt27814427%2F&psig=AOvVaw0IfUk9K40uxkYye7XstEHm&ust=1733862748884000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCVrvTEm4oDFQAAAAAdAAAAABAE">
+        <a href="https://thegamer221148.github.io/clickit/">click me for free ice cream</a>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg">
     </body>
 </html>
