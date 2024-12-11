@@ -14,9 +14,10 @@ hide: true
         </style>
     </head>
     <body>
-        <img id="EOL" src="https://static.wikia.nocookie.net/terraria_gamepedia/images/c/c9/Empress_of_Light.gif/revision/latest/scale-to-width-down/386?cb=20210501121017">
         <h1>Hello guys</h1>
         <a href="https://thegamer221148.github.io/clickit/">click me for free ice cream</a>
+        <h2>GAMES I MADE IN JAVACRIPT</h2>
+        <a href="https://thegamer221148.github.io/backrooms">Escape your Downloads Folder (unfinished)</a>
         <h2>Things i like</h2>
         <img src="https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg">
         <br>
