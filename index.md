@@ -48,5 +48,6 @@ hide: true
             move();
         ">Secret?</button>
         <h3>Terraria</h3>
+        <p>Terraria is a 2D rpg game with sandbox and survival elements. It is one of my favorite games and </p>
     </body>
 </html>
