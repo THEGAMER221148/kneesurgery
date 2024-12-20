@@ -20,6 +20,7 @@ permalink: /snake/
 
     body{
         font-family: "jersey 10";
+        background-color: black;
     }
     h2{
         font-family: "jersey 10";  
@@ -83,9 +84,15 @@ permalink: /snake/
         background-color: #FFF;
         color: #000;
     }
+    .rainbow{
+        color: 'white';
+    }
+    h2 {
+        text-align: center;
+    }
 </style>
 
-<h2>Snake</h2>
+<h2 id="rainbow">Snake</h2>
 <div class="container">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <p class="fs-4">Score: <span id="score_value">0</span></p>
@@ -370,8 +377,10 @@ permalink: /snake/
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
         let activeDot = function(x, y){
-            ctx.fillStyle = "rgb(" + (Math.sin(Date.now()*colorChangeSpeed)+1)*127 + "," + (Math.sin((Date.now()*colorChangeSpeed)+((2*Math.PI)/3))+1) * 127 + "," + (Math.sin((Date.now()*colorChangeSpeed)+(2*((2*Math.PI)/3)))+1) * 127 + ")";
-            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+            for(let i = 1; i < 10; i++){
+                ctx.fillStyle = "rgba(" + ((Math.sin(Date.now()*colorChangeSpeed)+1)*127) + "," + ((Math.sin((Date.now()*colorChangeSpeed)+((2*Math.PI)/3))+1) * 127) + "," + ((Math.sin((Date.now()*colorChangeSpeed)+(2*((2*Math.PI)/3)))+1) * 127) + "," + 1/i + ")";
+                ctx.fillRect(x * BLOCK, y * BLOCK - (i-1), BLOCK, BLOCK);
+            }
         }
         /* Random food placement */
         /////////////////////////////////////////////////////////////
@@ -405,8 +414,18 @@ permalink: /snake/
         /////////////////////////////////////////////////////////////
         let setWall = function(wall_value){
             wall = wall_value;
-            if(wall === 0){screen_snake.style.borderColor = "#606060";}
-            if(wall === 1){screen_snake.style.borderColor ="rgb(" + (Math.sin(Date.now()*colorChangeSpeed)+1)*127 + "," + (Math.sin((Date.now()*colorChangeSpeed)+((2*Math.PI)/3))+1) * 127 + "," + (Math.sin((Date.now()*colorChangeSpeed)+(2*((2*Math.PI)/3)))+1) * 127 + ")";}
         }
     })();
+</script>
+<script>
+    let colorChangeSpeed = 0.005;
+    let col;
+    function stepRainbow(){
+        col = "rgba(" + (Math.sin(Date.now()*colorChangeSpeed)+1)*127 + "," + (Math.sin((Date.now()*colorChangeSpeed)+((2*Math.PI)/3))+1) * 127 + "," + (Math.sin((Date.now()*colorChangeSpeed)+(2*((2*Math.PI)/3)))+1) * 127 + ", 0.8)";
+        document.getElementById("rainbow").style.color = col;
+        //document.getElementById("snake").style.boxShadow = `0 0 10px 10px ${col}`;
+        document.getElementById("snake").style.borderColor = col;
+        requestAnimationFrame(stepRainbow);
+    }
+    stepRainbow();
 </script>
